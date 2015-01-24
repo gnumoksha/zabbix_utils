@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zabbix_export>
+    <version>2.0</version>
+    <date>2014-12-31T00:28:33Z</date>
+    <groups>
+        <group>
+            <name>600 - SNMP</name>
+        </group>
+        <group>
+            <name>Templates</name>
+        </group>
+    </groups>
+    <templates>
+        <template>
+            <template>611_template_snmp_windows</template>
+            <name>611 - [template] [SNMP] Windows</name>
+            <groups>
+                <group>
+                    <name>600 - SNMP</name>
+                </group>
+                <group>
+                    <name>Templates</name>
+                </group>
+            </groups>
+            <applications/>
+            <items/>
+            <discovery_rules/>
+            <macros/>
+            <templates>
+                <template>
+                    <name>600_template_snmp_generico</name>
+                </template>
+                <template>
+                    <name>601_template_snmp_interfaces</name>
+                </template>
+                <template>
+                    <name>602_template_snmp_interfaces</name>
+                </template>
+                <template>
+                    <name>604_template_snmp_processadores</name>
+                </template>
+            </templates>
+            <screens/>
+        </template>
+    </templates>
+</zabbix_export>

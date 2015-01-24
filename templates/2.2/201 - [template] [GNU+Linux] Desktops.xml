@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zabbix_export>
+    <version>2.0</version>
+    <date>2014-12-31T00:20:47Z</date>
+    <groups>
+        <group>
+            <name>201 - desktops GNU/Linux</name>
+        </group>
+        <group>
+            <name>Templates</name>
+        </group>
+    </groups>
+    <templates>
+        <template>
+            <template>201_template_gnu_linux_desktops</template>
+            <name>201 - [template] [GNU+Linux] Desktops</name>
+            <groups>
+                <group>
+                    <name>201 - desktops GNU/Linux</name>
+                </group>
+                <group>
+                    <name>Templates</name>
+                </group>
+            </groups>
+            <applications/>
+            <items/>
+            <discovery_rules/>
+            <macros/>
+            <templates/>
+            <screens/>
+        </template>
+    </templates>
+</zabbix_export>

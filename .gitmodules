@@ -1,0 +1,9 @@
+[submodule "gnu+linux/externalscripts/dist/zabbix-apache-stats"]
+	path = gnu+linux/externalscripts/dist/zabbix-apache-stats
+	url = https://github.com/gpmidi/zabbix-apache-stats.git
+[submodule "gnu+linux/externalscripts/dist/speed_check"]
+	path = gnu+linux/externalscripts/dist/speed_check
+	url = https://github.com/teeks99/speed_check.git
+[submodule "gnu+linux/externalscripts/dist/speedtest-cli"]
+	path = gnu+linux/externalscripts/dist/speedtest-cli
+	url = https://github.com/sivel/speedtest-cli.git
