@@ -7,3 +7,6 @@
 [submodule "gnu+linux/externalscripts/dist/speedtest-cli"]
 	path = gnu+linux/externalscripts/dist/speedtest-cli
 	url = https://github.com/sivel/speedtest-cli.git
+[submodule "gnu+linux/alertscripts/dist/tg"]
+	path = gnu+linux/alertscripts/dist/tg
+	url = https://github.com/vysheng/tg.git
