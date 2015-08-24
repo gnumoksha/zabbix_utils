@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zabbix_export>
     <version>2.0</version>
-    <date>2014-12-31T00:21:02Z</date>
+    <date>2015-05-12T02:24:53Z</date>
     <groups>
         <group>
             <name>200 - servidores GNU+Linux</name>
@@ -69,6 +69,7 @@
                         </application>
                     </applications>
                     <valuemap/>
+                    <logtimefmt/>
                 </item>
                 <item>
                     <name>SSH: [log] avisos no arquivo {$SSH_LOG}</name>
@@ -118,6 +119,7 @@ https://www.zabbix.com/documentation/2.0/manual/config/items/itemtypes/zabbix_ag
                         </application>
                     </applications>
                     <valuemap/>
+                    <logtimefmt/>
                 </item>
                 <item>
                     <name>SSH: [memória] [tamanho] utilizada pelo processo {$SSH_PROCESSO_SECUNDARIO}</name>
@@ -160,6 +162,7 @@ https://www.zabbix.com/documentation/2.0/manual/config/items/itemtypes/zabbix_ag
                         </application>
                     </applications>
                     <valuemap/>
+                    <logtimefmt/>
                 </item>
                 <item>
                     <name>SSH: [memória] [tamanho] utilizada pelo processo {$SSH_PROCESSO}</name>
@@ -202,6 +205,7 @@ https://www.zabbix.com/documentation/2.0/manual/config/items/itemtypes/zabbix_ag
                         </application>
                     </applications>
                     <valuemap/>
+                    <logtimefmt/>
                 </item>
                 <item>
                     <name>SSH: [memória] [tamanho] utilizada pelo usuário {$SSH_USUARIO}</name>
@@ -244,6 +248,7 @@ https://www.zabbix.com/documentation/2.0/manual/config/items/itemtypes/zabbix_ag
                         </application>
                     </applications>
                     <valuemap/>
+                    <logtimefmt/>
                 </item>
                 <item>
                     <name>SSH: [processos] número de processos rodando com o usuário {$SSH_USUARIO}</name>
@@ -286,6 +291,7 @@ https://www.zabbix.com/documentation/2.0/manual/config/items/itemtypes/zabbix_ag
                         </application>
                     </applications>
                     <valuemap/>
+                    <logtimefmt/>
                 </item>
                 <item>
                     <name>SSH: [processos] número de processos {$SSH_PROCESSO_SECUNDARIO}</name>
@@ -328,6 +334,7 @@ https://www.zabbix.com/documentation/2.0/manual/config/items/itemtypes/zabbix_ag
                         </application>
                     </applications>
                     <valuemap/>
+                    <logtimefmt/>
                 </item>
                 <item>
                     <name>SSH: [processos] número de processos {$SSH_PROCESSO}</name>
@@ -370,6 +377,7 @@ https://www.zabbix.com/documentation/2.0/manual/config/items/itemtypes/zabbix_ag
                         </application>
                     </applications>
                     <valuemap/>
+                    <logtimefmt/>
                 </item>
                 <item>
                     <name>SSH: [rede] performance ssh na porta {$SSH_PORTA}</name>
@@ -412,6 +420,7 @@ https://www.zabbix.com/documentation/2.0/manual/config/items/itemtypes/zabbix_ag
                         </application>
                     </applications>
                     <valuemap/>
+                    <logtimefmt/>
                 </item>
                 <item>
                     <name>SSH: [rede] status conexão na porta {$SSH_PORTA}</name>
@@ -459,6 +468,7 @@ https://www.zabbix.com/documentation/2.0/manual/config/items/itemtypes/zabbix_ag
                         </application>
                     </applications>
                     <valuemap/>
+                    <logtimefmt/>
                 </item>
                 <item>
                     <name>SSH: [software] checksum de {$SSH_BINARIO_SSHD}</name>
@@ -501,6 +511,7 @@ https://www.zabbix.com/documentation/2.0/manual/config/items/itemtypes/zabbix_ag
                         </application>
                     </applications>
                     <valuemap/>
+                    <logtimefmt/>
                 </item>
                 <item>
                     <name>SSH: [software] checksum de {$SSH_BINARIO_SSH}</name>
@@ -543,6 +554,7 @@ https://www.zabbix.com/documentation/2.0/manual/config/items/itemtypes/zabbix_ag
                         </application>
                     </applications>
                     <valuemap/>
+                    <logtimefmt/>
                 </item>
             </items>
             <discovery_rules/>

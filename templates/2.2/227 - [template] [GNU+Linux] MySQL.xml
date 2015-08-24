@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zabbix_export>
     <version>2.0</version>
-    <date>2015-01-23T01:34:47Z</date>
+    <date>2015-05-12T02:25:21Z</date>
     <groups>
         <group>
             <name>200 - servidores GNU+Linux</name>
@@ -69,6 +69,7 @@
                         </application>
                     </applications>
                     <valuemap/>
+                    <logtimefmt/>
                 </item>
                 <item>
                     <name>MySQL: [log] avisos no arquivo {$MYSQL_LOG}</name>
@@ -118,6 +119,7 @@ https://www.zabbix.com/documentation/2.0/manual/config/items/itemtypes/zabbix_ag
                         </application>
                     </applications>
                     <valuemap/>
+                    <logtimefmt/>
                 </item>
                 <item>
                     <name>MySQL: [memória] [tamanho] utilizada pelo processo {$MYSQL_PROCESSO_SECUNDARIO}</name>
@@ -160,6 +162,7 @@ https://www.zabbix.com/documentation/2.0/manual/config/items/itemtypes/zabbix_ag
                         </application>
                     </applications>
                     <valuemap/>
+                    <logtimefmt/>
                 </item>
                 <item>
                     <name>MySQL: [memória] [tamanho] utilizada pelo processo {$MYSQL_PROCESSO}</name>
@@ -202,6 +205,7 @@ https://www.zabbix.com/documentation/2.0/manual/config/items/itemtypes/zabbix_ag
                         </application>
                     </applications>
                     <valuemap/>
+                    <logtimefmt/>
                 </item>
                 <item>
                     <name>MySQL: [memória] [tamanho] utilizada pelo usuário {$MYSQL_USUARIO}</name>
@@ -244,6 +248,7 @@ https://www.zabbix.com/documentation/2.0/manual/config/items/itemtypes/zabbix_ag
                         </application>
                     </applications>
                     <valuemap/>
+                    <logtimefmt/>
                 </item>
                 <item>
                     <name>MySQL: [mysql] queries por segundo</name>
@@ -286,6 +291,7 @@ https://www.zabbix.com/documentation/2.0/manual/config/items/itemtypes/zabbix_ag
                         </application>
                     </applications>
                     <valuemap/>
+                    <logtimefmt/>
                 </item>
                 <item>
                     <name>MySQL: [mysql] slow queries</name>
@@ -328,6 +334,7 @@ https://www.zabbix.com/documentation/2.0/manual/config/items/itemtypes/zabbix_ag
                         </application>
                     </applications>
                     <valuemap/>
+                    <logtimefmt/>
                 </item>
                 <item>
                     <name>MySQL: [mysql] status</name>
@@ -375,6 +382,7 @@ https://www.zabbix.com/documentation/2.0/manual/config/items/itemtypes/zabbix_ag
                     <valuemap>
                         <name>Service state</name>
                     </valuemap>
+                    <logtimefmt/>
                 </item>
                 <item>
                     <name>MySQL: [mysql] uptime</name>
@@ -417,6 +425,7 @@ https://www.zabbix.com/documentation/2.0/manual/config/items/itemtypes/zabbix_ag
                         </application>
                     </applications>
                     <valuemap/>
+                    <logtimefmt/>
                 </item>
                 <item>
                     <name>MySQL: [mysql] versão</name>
@@ -459,6 +468,7 @@ https://www.zabbix.com/documentation/2.0/manual/config/items/itemtypes/zabbix_ag
                         </application>
                     </applications>
                     <valuemap/>
+                    <logtimefmt/>
                 </item>
                 <item>
                     <name>MySQL: [mysql] [bytes] [enviados] por segundo</name>
@@ -503,6 +513,7 @@ It requires user parameter mysql.status[*], which is defined in userparameter_my
                         </application>
                     </applications>
                     <valuemap/>
+                    <logtimefmt/>
                 </item>
                 <item>
                     <name>MySQL: [mysql] [bytes] [recebidos] por segundo</name>
@@ -548,6 +559,7 @@ userparameter_mysql.conf.</description>
                         </application>
                     </applications>
                     <valuemap/>
+                    <logtimefmt/>
                 </item>
                 <item>
                     <name>MySQL: [mysql] [operações] begin por segundo</name>
@@ -590,6 +602,7 @@ userparameter_mysql.conf.</description>
                         </application>
                     </applications>
                     <valuemap/>
+                    <logtimefmt/>
                 </item>
                 <item>
                     <name>MySQL: [mysql] [operações] commit por segundo</name>
@@ -632,6 +645,7 @@ userparameter_mysql.conf.</description>
                         </application>
                     </applications>
                     <valuemap/>
+                    <logtimefmt/>
                 </item>
                 <item>
                     <name>MySQL: [mysql] [operações] delete por segundo</name>
@@ -674,6 +688,7 @@ userparameter_mysql.conf.</description>
                         </application>
                     </applications>
                     <valuemap/>
+                    <logtimefmt/>
                 </item>
                 <item>
                     <name>MySQL: [mysql] [operações] insert por segundo</name>
@@ -716,6 +731,7 @@ userparameter_mysql.conf.</description>
                         </application>
                     </applications>
                     <valuemap/>
+                    <logtimefmt/>
                 </item>
                 <item>
                     <name>MySQL: [mysql] [operações] rollback por segundo</name>
@@ -758,6 +774,7 @@ userparameter_mysql.conf.</description>
                         </application>
                     </applications>
                     <valuemap/>
+                    <logtimefmt/>
                 </item>
                 <item>
                     <name>MySQL: [mysql] [operações] select por segundo</name>
@@ -800,6 +817,7 @@ userparameter_mysql.conf.</description>
                         </application>
                     </applications>
                     <valuemap/>
+                    <logtimefmt/>
                 </item>
                 <item>
                     <name>MySQL: [mysql] [operações] update por segundo</name>
@@ -842,6 +860,7 @@ userparameter_mysql.conf.</description>
                         </application>
                     </applications>
                     <valuemap/>
+                    <logtimefmt/>
                 </item>
                 <item>
                     <name>MySQL: [mysql] [tamanho] todos os bancos de dados</name>
@@ -884,6 +903,7 @@ userparameter_mysql.conf.</description>
                         </application>
                     </applications>
                     <valuemap/>
+                    <logtimefmt/>
                 </item>
                 <item>
                     <name>MySQL: [processos] número de processos rodando com o usuário {$MYSQL_USUARIO}</name>
@@ -926,6 +946,7 @@ userparameter_mysql.conf.</description>
                         </application>
                     </applications>
                     <valuemap/>
+                    <logtimefmt/>
                 </item>
                 <item>
                     <name>MySQL: [processos] número de processos {$MYSQL_PROCESSO_SECUNDARIO}</name>
@@ -968,6 +989,7 @@ userparameter_mysql.conf.</description>
                         </application>
                     </applications>
                     <valuemap/>
+                    <logtimefmt/>
                 </item>
                 <item>
                     <name>MySQL: [processos] número de processos {$MYSQL_PROCESSO}</name>
@@ -1010,6 +1032,7 @@ userparameter_mysql.conf.</description>
                         </application>
                     </applications>
                     <valuemap/>
+                    <logtimefmt/>
                 </item>
                 <item>
                     <name>MySQL: [rede] performance tcp na porta {$MYSQL_PORTA}</name>
@@ -1052,6 +1075,7 @@ userparameter_mysql.conf.</description>
                         </application>
                     </applications>
                     <valuemap/>
+                    <logtimefmt/>
                 </item>
                 <item>
                     <name>MySQL: [rede] status conexão na porta {$MYSQL_PORTA}</name>
@@ -1099,6 +1123,7 @@ https://www.zabbix.com/documentation/2.0/manual/config/items/itemtypes/zabbix_ag
                         </application>
                     </applications>
                     <valuemap/>
+                    <logtimefmt/>
                 </item>
             </items>
             <discovery_rules>
@@ -1172,6 +1197,7 @@ https://www.zabbix.com/documentation/2.0/manual/config/items/itemtypes/zabbix_ag
                                 </application>
                             </applications>
                             <valuemap/>
+                            <logtimefmt/>
                         </item_prototype>
                     </item_prototypes>
                     <trigger_prototypes/>
@@ -1281,6 +1307,7 @@ https://www.zabbix.com/documentation/2.0/manual/config/items/itemtypes/zabbix_ag
                                 </application>
                             </applications>
                             <valuemap/>
+                            <logtimefmt/>
                         </item_prototype>
                     </item_prototypes>
                     <trigger_prototypes/>

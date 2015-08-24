@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zabbix_export>
     <version>2.0</version>
-    <date>2015-05-12T02:27:45Z</date>
+    <date>2015-05-12T02:28:00Z</date>
     <groups>
         <group>
             <name>800 - zabbix</name>
@@ -12,8 +12,8 @@
     </groups>
     <templates>
         <template>
-            <template>802_template_agente_zabbix_gnu_linux</template>
-            <name>802 - [template] [agente zabbix] GNU+Linux</name>
+            <template>802_template_agente_zabbix_gnu_linux_ativo</template>
+            <name>802 - [template] [A] [agente zabbix] GNU+Linux</name>
             <groups>
                 <group>
                     <name>800 - zabbix</name>
@@ -30,7 +30,7 @@
             <items>
                 <item>
                     <name>Agente zabbix: [sistema] [processos] [número] $1</name>
-                    <type>0</type>
+                    <type>7</type>
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
@@ -80,7 +80,7 @@
     </templates>
     <triggers>
         <trigger>
-            <expression>{802_template_agente_zabbix_gnu_linux:proc.num[zabbix_agentd].last(0)}&lt;1</expression>
+            <expression>{802_template_agente_zabbix_gnu_linux_ativo:proc.num[zabbix_agentd].last(0)}&lt;1</expression>
             <name>[{HOSTNAME}]: [Agente zabbix] agente não está em execução</name>
             <url/>
             <status>0</status>
@@ -117,7 +117,7 @@
                     <calc_fnc>2</calc_fnc>
                     <type>0</type>
                     <item>
-                        <host>802_template_agente_zabbix_gnu_linux</host>
+                        <host>802_template_agente_zabbix_gnu_linux_ativo</host>
                         <key>proc.num[zabbix_agentd]</key>
                     </item>
                 </graph_item>

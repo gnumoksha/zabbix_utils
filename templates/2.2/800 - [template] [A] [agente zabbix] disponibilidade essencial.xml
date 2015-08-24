@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zabbix_export>
     <version>2.0</version>
-    <date>2015-05-12T02:27:12Z</date>
+    <date>2015-05-12T02:26:55Z</date>
     <groups>
         <group>
             <name>800 - zabbix</name>
@@ -12,8 +12,8 @@
     </groups>
     <templates>
         <template>
-            <template>801_template_agente_zabbix_disponibilidade_nao_essencial</template>
-            <name>801 - [template] [agente zabbix] disponibilidade não essencial</name>
+            <template>800_template_agente_zabbix_disponibilidade_essencial_ativo</template>
+            <name>800 - [template] [A] [agente zabbix] disponibilidade essencial</name>
             <groups>
                 <group>
                     <name>800 - zabbix</name>
@@ -24,19 +24,13 @@
             </groups>
             <applications>
                 <application>
-                    <name>Agente zabbix - não essencial</name>
-                </application>
-                <application>
-                    <name>Rede - agente zabbix</name>
-                </application>
-                <application>
-                    <name>Sistema - agente zabbix</name>
+                    <name>Agente zabbix - essencial</name>
                 </application>
             </applications>
             <items>
                 <item>
-                    <name>Rede: ping para o agent zabbix</name>
-                    <type>0</type>
+                    <name>Agente zabbix: ping para o agent</name>
+                    <type>7</type>
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
@@ -71,7 +65,7 @@
                     <inventory_link>0</inventory_link>
                     <applications>
                         <application>
-                            <name>Rede - agente zabbix</name>
+                            <name>Agente zabbix - essencial</name>
                         </application>
                     </applications>
                     <valuemap>
@@ -80,8 +74,8 @@
                     <logtimefmt/>
                 </item>
                 <item>
-                    <name>Sistema: versao do zabbix_agent(d) rodando</name>
-                    <type>0</type>
+                    <name>Agente zabbix: versao do agent</name>
+                    <type>7</type>
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
@@ -116,7 +110,7 @@
                     <inventory_link>0</inventory_link>
                     <applications>
                         <application>
-                            <name>Sistema - agente zabbix</name>
+                            <name>Agente zabbix - essencial</name>
                         </application>
                     </applications>
                     <valuemap/>
@@ -131,8 +125,18 @@
     </templates>
     <triggers>
         <trigger>
-            <expression>{801_template_agente_zabbix_disponibilidade_nao_essencial:agent.version.diff(0)}&gt;0</expression>
-            <name>[{HOSTNAME}]: [sistema] versão do agent zabbix foi alterada para {ITEM.LASTVALUE}</name>
+            <expression>{800_template_agente_zabbix_disponibilidade_essencial_ativo:agent.ping.last(0)}#1|{800_template_agente_zabbix_disponibilidade_essencial_ativo:agent.ping.nodata(1m)}=1</expression>
+            <name>[{HOSTNAME}]: [Agente zabbix] não há comunicação com o agent</name>
+            <url/>
+            <status>0</status>
+            <priority>5</priority>
+            <description>https://www.zabbix.com/documentation/2.0/manual/config/triggers/expression</description>
+            <type>0</type>
+            <dependencies/>
+        </trigger>
+        <trigger>
+            <expression>{800_template_agente_zabbix_disponibilidade_essencial_ativo:agent.version.diff(0)}&gt;0</expression>
+            <name>[{HOSTNAME}]: [Agente zabbix] versão do agent foi alterada para {ITEM.LASTVALUE}</name>
             <url/>
             <status>0</status>
             <priority>1</priority>

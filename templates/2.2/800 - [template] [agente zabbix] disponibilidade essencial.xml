@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zabbix_export>
     <version>2.0</version>
-    <date>2014-12-31T00:28:46Z</date>
+    <date>2015-05-12T02:26:37Z</date>
     <groups>
         <group>
             <name>800 - zabbix</name>
@@ -71,6 +71,7 @@
                     <valuemap>
                         <name>Service state</name>
                     </valuemap>
+                    <logtimefmt/>
                 </item>
                 <item>
                     <name>Agente zabbix: versao do agent</name>
@@ -113,6 +114,7 @@
                         </application>
                     </applications>
                     <valuemap/>
+                    <logtimefmt/>
                 </item>
             </items>
             <discovery_rules/>
@@ -127,7 +129,7 @@
             <name>[{HOSTNAME}]: [Agente zabbix] não há comunicação com o agent</name>
             <url/>
             <status>0</status>
-            <priority>4</priority>
+            <priority>5</priority>
             <description>https://www.zabbix.com/documentation/2.0/manual/config/triggers/expression</description>
             <type>0</type>
             <dependencies/>

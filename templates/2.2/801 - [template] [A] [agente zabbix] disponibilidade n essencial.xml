@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zabbix_export>
     <version>2.0</version>
-    <date>2015-05-12T02:27:12Z</date>
+    <date>2015-05-12T02:27:28Z</date>
     <groups>
         <group>
             <name>800 - zabbix</name>
@@ -12,8 +12,8 @@
     </groups>
     <templates>
         <template>
-            <template>801_template_agente_zabbix_disponibilidade_nao_essencial</template>
-            <name>801 - [template] [agente zabbix] disponibilidade não essencial</name>
+            <template>801_template_agente_zabbix_disponibilidade_nao_essencial_ativo</template>
+            <name>801 - [template] [A] [agente zabbix] disponibilidade n essencial</name>
             <groups>
                 <group>
                     <name>800 - zabbix</name>
@@ -131,7 +131,7 @@
     </templates>
     <triggers>
         <trigger>
-            <expression>{801_template_agente_zabbix_disponibilidade_nao_essencial:agent.version.diff(0)}&gt;0</expression>
+            <expression>{801_template_agente_zabbix_disponibilidade_nao_essencial_ativo:agent.version.diff(0)}&gt;0</expression>
             <name>[{HOSTNAME}]: [sistema] versão do agent zabbix foi alterada para {ITEM.LASTVALUE}</name>
             <url/>
             <status>0</status>

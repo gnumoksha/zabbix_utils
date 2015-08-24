@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zabbix_export>
     <version>2.0</version>
-    <date>2015-08-14T14:46:34Z</date>
+    <date>2015-05-12T02:24:12Z</date>
     <groups>
         <group>
             <name>200 - servidores GNU+Linux</name>
@@ -12,8 +12,8 @@
     </groups>
     <templates>
         <template>
-            <template>200_template_gnu_linux_servidores</template>
-            <name>200 - [template] [GNU+Linux] Servidores</name>
+            <template>200_template_gnu_linux_servidores_ativo</template>
+            <name>200 - [template] [A] [GNU+Linux] Servidores</name>
             <groups>
                 <group>
                     <name>200 - servidores GNU+Linux</name>
@@ -45,7 +45,7 @@
             <items>
                 <item>
                     <name>Memória: [ram] [porcentagem] disponível</name>
-                    <type>0</type>
+                    <type>7</type>
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
@@ -90,7 +90,7 @@ https://www.zabbix.com/documentation/2.0/manual/appendix/items/supported_by_plat
                 </item>
                 <item>
                     <name>Memória: [ram] [tamanho] disponível</name>
-                    <type>0</type>
+                    <type>7</type>
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
@@ -135,7 +135,7 @@ https://www.zabbix.com/documentation/2.0/manual/appendix/items/supported_by_plat
                 </item>
                 <item>
                     <name>Memória: [ram] [tamanho] em buffer</name>
-                    <type>0</type>
+                    <type>7</type>
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
@@ -180,7 +180,7 @@ https://www.zabbix.com/documentation/2.0/manual/appendix/items/supported_by_plat
                 </item>
                 <item>
                     <name>Memória: [ram] [tamanho] em cache</name>
-                    <type>0</type>
+                    <type>7</type>
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
@@ -225,7 +225,7 @@ https://www.zabbix.com/documentation/2.0/manual/appendix/items/supported_by_plat
                 </item>
                 <item>
                     <name>Memória: [ram] [tamanho] inativa</name>
-                    <type>0</type>
+                    <type>7</type>
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
@@ -270,7 +270,7 @@ https://www.zabbix.com/documentation/2.0/manual/appendix/items/supported_by_plat
                 </item>
                 <item>
                     <name>Memória: [ram] [tamanho] livre</name>
-                    <type>0</type>
+                    <type>7</type>
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
@@ -315,7 +315,7 @@ https://www.zabbix.com/documentation/2.0/manual/appendix/items/supported_by_plat
                 </item>
                 <item>
                     <name>Memória: [ram] [tamanho] total</name>
-                    <type>0</type>
+                    <type>7</type>
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
@@ -360,56 +360,7 @@ https://www.zabbix.com/documentation/2.0/manual/appendix/items/supported_by_plat
                 </item>
                 <item>
                     <name>Memória: [ram] [tamanho] utilizada</name>
-                    <type>15</type>
-                    <snmp_community/>
-                    <multiplier>0</multiplier>
-                    <snmp_oid/>
-                    <key>calc.memory.used</key>
-                    <delay>60</delay>
-                    <history>30</history>
-                    <trends>365</trends>
-                    <status>0</status>
-                    <value_type>3</value_type>
-                    <allowed_hosts/>
-                    <units>B</units>
-                    <delta>0</delta>
-                    <snmpv3_contextname/>
-                    <snmpv3_securityname/>
-                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
-                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
-                    <snmpv3_authpassphrase/>
-                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
-                    <snmpv3_privpassphrase/>
-                    <formula>1</formula>
-                    <delay_flex/>
-                    <params>last(&quot;vm.memory.size[used]&quot;)-last(&quot;vm.memory.size[cached]&quot;)-last(&quot;vm.memory.size[buffers]&quot;)</params>
-                    <ipmi_sensor/>
-                    <data_type>0</data_type>
-                    <authtype>0</authtype>
-                    <username/>
-                    <password/>
-                    <publickey/>
-                    <privatekey/>
-                    <port/>
-                    <description>Obtém a quantidade real de memória utilizada pelo sistema, através de um item calculado.&#13;
-&#13;
-https://www.zabbix.com/documentation/2.2/manual/config/items/itemtypes/calculated&#13;
-&#13;
-https://www.zabbix.com/documentation/2.0/manual/config/items/itemtypes/zabbix_agent&#13;
-&#13;
-https://www.zabbix.com/documentation/2.0/manual/appendix/items/supported_by_platform</description>
-                    <inventory_link>0</inventory_link>
-                    <applications>
-                        <application>
-                            <name>Memória</name>
-                        </application>
-                    </applications>
-                    <valuemap/>
-                    <logtimefmt/>
-                </item>
-                <item>
-                    <name>Memória: [ram] [tamanho] utilizada + reservada</name>
-                    <type>0</type>
+                    <type>7</type>
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
@@ -440,7 +391,9 @@ https://www.zabbix.com/documentation/2.0/manual/appendix/items/supported_by_plat
                     <publickey/>
                     <privatekey/>
                     <port/>
-                    <description>Obtém a quantidade de memória utilizada e reservada pelo kernel.</description>
+                    <description>https://www.zabbix.com/documentation/2.0/manual/config/items/itemtypes/zabbix_agent&#13;
+&#13;
+https://www.zabbix.com/documentation/2.0/manual/appendix/items/supported_by_platform</description>
                     <inventory_link>0</inventory_link>
                     <applications>
                         <application>
@@ -452,7 +405,7 @@ https://www.zabbix.com/documentation/2.0/manual/appendix/items/supported_by_plat
                 </item>
                 <item>
                     <name>Memória: [ram] [tamanho] [personalizado] utilizada</name>
-                    <type>0</type>
+                    <type>7</type>
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
@@ -460,7 +413,7 @@ https://www.zabbix.com/documentation/2.0/manual/appendix/items/supported_by_plat
                     <delay>60</delay>
                     <history>30</history>
                     <trends>365</trends>
-                    <status>1</status>
+                    <status>0</status>
                     <value_type>3</value_type>
                     <allowed_hosts/>
                     <units>B</units>
@@ -483,7 +436,7 @@ https://www.zabbix.com/documentation/2.0/manual/appendix/items/supported_by_plat
                     <publickey/>
                     <privatekey/>
                     <port/>
-                    <description>Obtém a quantidade real de memória utilizada pelo sistema, através de um script personalizado.</description>
+                    <description/>
                     <inventory_link>0</inventory_link>
                     <applications>
                         <application>
@@ -495,7 +448,7 @@ https://www.zabbix.com/documentation/2.0/manual/appendix/items/supported_by_plat
                 </item>
                 <item>
                     <name>Memória: [swap] [entrada] contagem de entradas do disco para memória</name>
-                    <type>0</type>
+                    <type>7</type>
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
@@ -538,7 +491,7 @@ https://www.zabbix.com/documentation/2.0/manual/appendix/items/supported_by_plat
                 </item>
                 <item>
                     <name>Memória: [swap] [entrada] número de páginas de entrada do disco para memória</name>
-                    <type>0</type>
+                    <type>7</type>
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
@@ -581,7 +534,7 @@ https://www.zabbix.com/documentation/2.0/manual/appendix/items/supported_by_plat
                 </item>
                 <item>
                     <name>Memória: [swap] [entrada] número setores de entrada do disco para memória</name>
-                    <type>0</type>
+                    <type>7</type>
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
@@ -624,7 +577,7 @@ https://www.zabbix.com/documentation/2.0/manual/appendix/items/supported_by_plat
                 </item>
                 <item>
                     <name>Memória: [swap] [porcentagem] livre</name>
-                    <type>0</type>
+                    <type>7</type>
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
@@ -667,7 +620,7 @@ https://www.zabbix.com/documentation/2.0/manual/appendix/items/supported_by_plat
                 </item>
                 <item>
                     <name>Memória: [swap] [porcentagem] utilizado</name>
-                    <type>0</type>
+                    <type>7</type>
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
@@ -675,7 +628,7 @@ https://www.zabbix.com/documentation/2.0/manual/appendix/items/supported_by_plat
                     <delay>120</delay>
                     <history>30</history>
                     <trends>365</trends>
-                    <status>1</status>
+                    <status>0</status>
                     <value_type>0</value_type>
                     <allowed_hosts/>
                     <units>%</units>
@@ -710,7 +663,7 @@ https://www.zabbix.com/documentation/2.0/manual/appendix/items/supported_by_plat
                 </item>
                 <item>
                     <name>Memória: [swap] [saída] contagem de saídas da memória para o disco</name>
-                    <type>0</type>
+                    <type>7</type>
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
@@ -753,7 +706,7 @@ https://www.zabbix.com/documentation/2.0/manual/appendix/items/supported_by_plat
                 </item>
                 <item>
                     <name>Memória: [swap] [saída] número de páginas de saída da memória para o disco</name>
-                    <type>0</type>
+                    <type>7</type>
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
@@ -796,7 +749,7 @@ https://www.zabbix.com/documentation/2.0/manual/appendix/items/supported_by_plat
                 </item>
                 <item>
                     <name>Memória: [swap] [saída] número de setores de saída da memória para o disco</name>
-                    <type>0</type>
+                    <type>7</type>
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
@@ -839,7 +792,7 @@ https://www.zabbix.com/documentation/2.0/manual/appendix/items/supported_by_plat
                 </item>
                 <item>
                     <name>Memória: [swap] [tamanho] livre</name>
-                    <type>0</type>
+                    <type>7</type>
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
@@ -882,11 +835,11 @@ https://www.zabbix.com/documentation/2.0/manual/appendix/items/supported_by_plat
                 </item>
                 <item>
                     <name>Memória: [swap] [tamanho] total</name>
-                    <type>15</type>
+                    <type>7</type>
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>calc.swap.total</key>
+                    <key>system.swap.size[all,total]</key>
                     <delay>28800</delay>
                     <history>30</history>
                     <trends>365</trends>
@@ -904,7 +857,7 @@ https://www.zabbix.com/documentation/2.0/manual/appendix/items/supported_by_plat
                     <snmpv3_privpassphrase/>
                     <formula>1</formula>
                     <delay_flex/>
-                    <params>last(&quot;system.swap.size[all,used]&quot;)+last(&quot;system.swap.size[all,free]&quot;)</params>
+                    <params/>
                     <ipmi_sensor/>
                     <data_type>0</data_type>
                     <authtype>0</authtype>
@@ -913,7 +866,7 @@ https://www.zabbix.com/documentation/2.0/manual/appendix/items/supported_by_plat
                     <publickey/>
                     <privatekey/>
                     <port/>
-                    <description>Utilizado item calculado para diminuir o número de itens coletados</description>
+                    <description/>
                     <inventory_link>0</inventory_link>
                     <applications>
                         <application>
@@ -925,7 +878,7 @@ https://www.zabbix.com/documentation/2.0/manual/appendix/items/supported_by_plat
                 </item>
                 <item>
                     <name>Memória: [swap] [tamanho] utilizada</name>
-                    <type>0</type>
+                    <type>7</type>
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
@@ -968,7 +921,7 @@ https://www.zabbix.com/documentation/2.0/manual/appendix/items/supported_by_plat
                 </item>
                 <item>
                     <name>Processador: [carga] $2</name>
-                    <type>0</type>
+                    <type>7</type>
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
@@ -1011,15 +964,15 @@ https://www.zabbix.com/documentation/2.0/manual/appendix/items/supported_by_plat
                 </item>
                 <item>
                     <name>Processador: [carga] $2</name>
-                    <type>0</type>
+                    <type>7</type>
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>system.cpu.load[all,avg5]</key>
-                    <delay>300</delay>
+                    <key>system.cpu.load[all,avg15]</key>
+                    <delay>900</delay>
                     <history>30</history>
                     <trends>365</trends>
-                    <status>1</status>
+                    <status>0</status>
                     <value_type>0</value_type>
                     <allowed_hosts/>
                     <units/>
@@ -1054,15 +1007,15 @@ https://www.zabbix.com/documentation/2.0/manual/appendix/items/supported_by_plat
                 </item>
                 <item>
                     <name>Processador: [carga] $2</name>
-                    <type>0</type>
+                    <type>7</type>
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>system.cpu.load[all,avg15]</key>
-                    <delay>900</delay>
+                    <key>system.cpu.load[all,avg5]</key>
+                    <delay>300</delay>
                     <history>30</history>
                     <trends>365</trends>
-                    <status>1</status>
+                    <status>0</status>
                     <value_type>0</value_type>
                     <allowed_hosts/>
                     <units/>
@@ -1097,7 +1050,50 @@ https://www.zabbix.com/documentation/2.0/manual/appendix/items/supported_by_plat
                 </item>
                 <item>
                     <name>Processador: [utilização] [$3] $2</name>
-                    <type>0</type>
+                    <type>7</type>
+                    <snmp_community/>
+                    <multiplier>0</multiplier>
+                    <snmp_oid/>
+                    <key>system.cpu.util[all,steal,avg1]</key>
+                    <delay>60</delay>
+                    <history>30</history>
+                    <trends>365</trends>
+                    <status>0</status>
+                    <value_type>0</value_type>
+                    <allowed_hosts/>
+                    <units/>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description/>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>Processador</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                    <logtimefmt/>
+                </item>
+                <item>
+                    <name>Processador: [utilização] [$3] $2</name>
+                    <type>7</type>
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
@@ -1140,179 +1136,7 @@ https://www.zabbix.com/documentation/2.0/manual/appendix/items/supported_by_plat
                 </item>
                 <item>
                     <name>Processador: [utilização] [$3] $2</name>
-                    <type>0</type>
-                    <snmp_community/>
-                    <multiplier>0</multiplier>
-                    <snmp_oid/>
-                    <key>system.cpu.util[all,idle,avg1]</key>
-                    <delay>60</delay>
-                    <history>30</history>
-                    <trends>365</trends>
-                    <status>0</status>
-                    <value_type>0</value_type>
-                    <allowed_hosts/>
-                    <units/>
-                    <delta>0</delta>
-                    <snmpv3_contextname/>
-                    <snmpv3_securityname/>
-                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
-                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
-                    <snmpv3_authpassphrase/>
-                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
-                    <snmpv3_privpassphrase/>
-                    <formula>1</formula>
-                    <delay_flex/>
-                    <params/>
-                    <ipmi_sensor/>
-                    <data_type>0</data_type>
-                    <authtype>0</authtype>
-                    <username/>
-                    <password/>
-                    <publickey/>
-                    <privatekey/>
-                    <port/>
-                    <description/>
-                    <inventory_link>0</inventory_link>
-                    <applications>
-                        <application>
-                            <name>Processador</name>
-                        </application>
-                    </applications>
-                    <valuemap/>
-                    <logtimefmt/>
-                </item>
-                <item>
-                    <name>Processador: [utilização] [$3] $2</name>
-                    <type>0</type>
-                    <snmp_community/>
-                    <multiplier>0</multiplier>
-                    <snmp_oid/>
-                    <key>system.cpu.util[all,interrupt,avg1]</key>
-                    <delay>60</delay>
-                    <history>30</history>
-                    <trends>365</trends>
-                    <status>0</status>
-                    <value_type>0</value_type>
-                    <allowed_hosts/>
-                    <units/>
-                    <delta>0</delta>
-                    <snmpv3_contextname/>
-                    <snmpv3_securityname/>
-                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
-                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
-                    <snmpv3_authpassphrase/>
-                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
-                    <snmpv3_privpassphrase/>
-                    <formula>1</formula>
-                    <delay_flex/>
-                    <params/>
-                    <ipmi_sensor/>
-                    <data_type>0</data_type>
-                    <authtype>0</authtype>
-                    <username/>
-                    <password/>
-                    <publickey/>
-                    <privatekey/>
-                    <port/>
-                    <description/>
-                    <inventory_link>0</inventory_link>
-                    <applications>
-                        <application>
-                            <name>Processador</name>
-                        </application>
-                    </applications>
-                    <valuemap/>
-                    <logtimefmt/>
-                </item>
-                <item>
-                    <name>Processador: [utilização] [$3] $2</name>
-                    <type>0</type>
-                    <snmp_community/>
-                    <multiplier>0</multiplier>
-                    <snmp_oid/>
-                    <key>system.cpu.util[all,softirq,avg1]</key>
-                    <delay>60</delay>
-                    <history>30</history>
-                    <trends>365</trends>
-                    <status>0</status>
-                    <value_type>0</value_type>
-                    <allowed_hosts/>
-                    <units/>
-                    <delta>0</delta>
-                    <snmpv3_contextname/>
-                    <snmpv3_securityname/>
-                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
-                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
-                    <snmpv3_authpassphrase/>
-                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
-                    <snmpv3_privpassphrase/>
-                    <formula>1</formula>
-                    <delay_flex/>
-                    <params/>
-                    <ipmi_sensor/>
-                    <data_type>0</data_type>
-                    <authtype>0</authtype>
-                    <username/>
-                    <password/>
-                    <publickey/>
-                    <privatekey/>
-                    <port/>
-                    <description/>
-                    <inventory_link>0</inventory_link>
-                    <applications>
-                        <application>
-                            <name>Processador</name>
-                        </application>
-                    </applications>
-                    <valuemap/>
-                    <logtimefmt/>
-                </item>
-                <item>
-                    <name>Processador: [utilização] [$3] $2</name>
-                    <type>0</type>
-                    <snmp_community/>
-                    <multiplier>0</multiplier>
-                    <snmp_oid/>
-                    <key>system.cpu.util[all,user,avg1]</key>
-                    <delay>60</delay>
-                    <history>30</history>
-                    <trends>365</trends>
-                    <status>0</status>
-                    <value_type>0</value_type>
-                    <allowed_hosts/>
-                    <units/>
-                    <delta>0</delta>
-                    <snmpv3_contextname/>
-                    <snmpv3_securityname/>
-                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
-                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
-                    <snmpv3_authpassphrase/>
-                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
-                    <snmpv3_privpassphrase/>
-                    <formula>1</formula>
-                    <delay_flex/>
-                    <params/>
-                    <ipmi_sensor/>
-                    <data_type>0</data_type>
-                    <authtype>0</authtype>
-                    <username/>
-                    <password/>
-                    <publickey/>
-                    <privatekey/>
-                    <port/>
-                    <description/>
-                    <inventory_link>0</inventory_link>
-                    <applications>
-                        <application>
-                            <name>Processador</name>
-                        </application>
-                    </applications>
-                    <valuemap/>
-                    <logtimefmt/>
-                </item>
-                <item>
-                    <name>Processador: [utilização] [$3] $2</name>
-                    <type>0</type>
+                    <type>7</type>
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
@@ -1355,7 +1179,7 @@ https://www.zabbix.com/documentation/2.0/manual/appendix/items/supported_by_plat
                 </item>
                 <item>
                     <name>Processador: [utilização] [$3] $2</name>
-                    <type>0</type>
+                    <type>7</type>
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
@@ -1398,11 +1222,140 @@ https://www.zabbix.com/documentation/2.0/manual/appendix/items/supported_by_plat
                 </item>
                 <item>
                     <name>Processador: [utilização] [$3] $2</name>
-                    <type>0</type>
+                    <type>7</type>
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>system.cpu.util[all,steal,avg1]</key>
+                    <key>system.cpu.util[all,interrupt,avg1]</key>
+                    <delay>60</delay>
+                    <history>30</history>
+                    <trends>365</trends>
+                    <status>0</status>
+                    <value_type>0</value_type>
+                    <allowed_hosts/>
+                    <units/>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description/>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>Processador</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                    <logtimefmt/>
+                </item>
+                <item>
+                    <name>Processador: [utilização] [$3] $2</name>
+                    <type>7</type>
+                    <snmp_community/>
+                    <multiplier>0</multiplier>
+                    <snmp_oid/>
+                    <key>system.cpu.util[all,softirq,avg1]</key>
+                    <delay>60</delay>
+                    <history>30</history>
+                    <trends>365</trends>
+                    <status>0</status>
+                    <value_type>0</value_type>
+                    <allowed_hosts/>
+                    <units/>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description/>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>Processador</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                    <logtimefmt/>
+                </item>
+                <item>
+                    <name>Processador: [utilização] [$3] $2</name>
+                    <type>7</type>
+                    <snmp_community/>
+                    <multiplier>0</multiplier>
+                    <snmp_oid/>
+                    <key>system.cpu.util[all,user,avg1]</key>
+                    <delay>60</delay>
+                    <history>30</history>
+                    <trends>365</trends>
+                    <status>0</status>
+                    <value_type>0</value_type>
+                    <allowed_hosts/>
+                    <units/>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description/>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>Processador</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                    <logtimefmt/>
+                </item>
+                <item>
+                    <name>Processador: [utilização] [$3] $2</name>
+                    <type>7</type>
+                    <snmp_community/>
+                    <multiplier>0</multiplier>
+                    <snmp_oid/>
+                    <key>system.cpu.util[all,idle,avg1]</key>
                     <delay>60</delay>
                     <history>30</history>
                     <trends>365</trends>
@@ -1441,7 +1394,7 @@ https://www.zabbix.com/documentation/2.0/manual/appendix/items/supported_by_plat
                 </item>
                 <item>
                     <name>Sistema: hora local</name>
-                    <type>0</type>
+                    <type>7</type>
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
@@ -1484,7 +1437,7 @@ https://www.zabbix.com/documentation/2.0/manual/appendix/items/supported_by_plat
                 </item>
                 <item>
                     <name>Sistema: informacoes do host</name>
-                    <type>0</type>
+                    <type>7</type>
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
@@ -1527,7 +1480,7 @@ https://www.zabbix.com/documentation/2.0/manual/appendix/items/supported_by_plat
                 </item>
                 <item>
                     <name>Sistema: nome do host</name>
-                    <type>0</type>
+                    <type>7</type>
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
@@ -1570,7 +1523,7 @@ https://www.zabbix.com/documentation/2.0/manual/appendix/items/supported_by_plat
                 </item>
                 <item>
                     <name>Sistema: Número de usuários conectados</name>
-                    <type>0</type>
+                    <type>7</type>
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
@@ -1613,7 +1566,7 @@ https://www.zabbix.com/documentation/2.0/manual/appendix/items/supported_by_plat
                 </item>
                 <item>
                     <name>Sistema: Número máximo de arquivos abertos</name>
-                    <type>0</type>
+                    <type>7</type>
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
@@ -1656,7 +1609,7 @@ https://www.zabbix.com/documentation/2.0/manual/appendix/items/supported_by_plat
                 </item>
                 <item>
                     <name>Sistema: uptime (em segundos)</name>
-                    <type>0</type>
+                    <type>7</type>
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
@@ -1699,7 +1652,7 @@ https://www.zabbix.com/documentation/2.0/manual/appendix/items/supported_by_plat
                 </item>
                 <item>
                     <name>Sistema: [checksum] $1</name>
-                    <type>0</type>
+                    <type>7</type>
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
@@ -1742,7 +1695,7 @@ https://www.zabbix.com/documentation/2.0/manual/appendix/items/supported_by_plat
                 </item>
                 <item>
                     <name>Sistema: [processos] [número] executando</name>
-                    <type>0</type>
+                    <type>7</type>
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
@@ -1785,7 +1738,7 @@ https://www.zabbix.com/documentation/2.0/manual/appendix/items/supported_by_plat
                 </item>
                 <item>
                     <name>Sistema: [processos] [número] máximo</name>
-                    <type>0</type>
+                    <type>7</type>
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
@@ -1828,7 +1781,7 @@ https://www.zabbix.com/documentation/2.0/manual/appendix/items/supported_by_plat
                 </item>
                 <item>
                     <name>Sistema: [processos] [número] sleep</name>
-                    <type>0</type>
+                    <type>7</type>
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
@@ -1871,7 +1824,7 @@ https://www.zabbix.com/documentation/2.0/manual/appendix/items/supported_by_plat
                 </item>
                 <item>
                     <name>Sistema: [processos] [número] total</name>
-                    <type>0</type>
+                    <type>7</type>
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
@@ -1914,7 +1867,7 @@ https://www.zabbix.com/documentation/2.0/manual/appendix/items/supported_by_plat
                 </item>
                 <item>
                     <name>Sistema: [processos] [número] zumbi</name>
-                    <type>0</type>
+                    <type>7</type>
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
@@ -1959,7 +1912,7 @@ https://www.zabbix.com/documentation/2.0/manual/appendix/items/supported_by_plat
             <discovery_rules>
                 <discovery_rule>
                     <name>HD: Descoberta de HDs</name>
-                    <type>0</type>
+                    <type>7</type>
                     <snmp_community/>
                     <snmp_oid/>
                     <key>up.hd.discovery</key>
@@ -1988,7 +1941,7 @@ https://www.zabbix.com/documentation/2.0/manual/appendix/items/supported_by_plat
                     <item_prototypes>
                         <item_prototype>
                             <name>HD: [$1] [latência] de escrita em ms</name>
-                            <type>0</type>
+                            <type>7</type>
                             <snmp_community/>
                             <multiplier>0</multiplier>
                             <snmp_oid/>
@@ -2031,7 +1984,7 @@ https://www.zabbix.com/documentation/2.0/manual/appendix/items/supported_by_plat
                         </item_prototype>
                         <item_prototype>
                             <name>HD: [$1] [latência] de I/O em ms</name>
-                            <type>0</type>
+                            <type>7</type>
                             <snmp_community/>
                             <multiplier>0</multiplier>
                             <snmp_oid/>
@@ -2074,7 +2027,7 @@ https://www.zabbix.com/documentation/2.0/manual/appendix/items/supported_by_plat
                         </item_prototype>
                         <item_prototype>
                             <name>HD: [$1] [latência] de leitura em ms</name>
-                            <type>0</type>
+                            <type>7</type>
                             <snmp_community/>
                             <multiplier>0</multiplier>
                             <snmp_oid/>
@@ -2117,7 +2070,7 @@ https://www.zabbix.com/documentation/2.0/manual/appendix/items/supported_by_plat
                         </item_prototype>
                         <item_prototype>
                             <name>HD: [$1] [operações] de escrita em ops</name>
-                            <type>0</type>
+                            <type>7</type>
                             <snmp_community/>
                             <multiplier>0</multiplier>
                             <snmp_oid/>
@@ -2160,7 +2113,7 @@ https://www.zabbix.com/documentation/2.0/manual/appendix/items/supported_by_plat
                         </item_prototype>
                         <item_prototype>
                             <name>HD: [$1] [operações] de leitura em ops</name>
-                            <type>0</type>
+                            <type>7</type>
                             <snmp_community/>
                             <multiplier>0</multiplier>
                             <snmp_oid/>
@@ -2203,7 +2156,7 @@ https://www.zabbix.com/documentation/2.0/manual/appendix/items/supported_by_plat
                         </item_prototype>
                         <item_prototype>
                             <name>HD: [$1] [requisições] de I/O atuais</name>
-                            <type>0</type>
+                            <type>7</type>
                             <snmp_community/>
                             <multiplier>0</multiplier>
                             <snmp_oid/>
@@ -2246,7 +2199,7 @@ https://www.zabbix.com/documentation/2.0/manual/appendix/items/supported_by_plat
                         </item_prototype>
                         <item_prototype>
                             <name>HD: [$1] [taxa] de escrita em Bps</name>
-                            <type>0</type>
+                            <type>7</type>
                             <snmp_community/>
                             <multiplier>1</multiplier>
                             <snmp_oid/>
@@ -2289,7 +2242,7 @@ https://www.zabbix.com/documentation/2.0/manual/appendix/items/supported_by_plat
                         </item_prototype>
                         <item_prototype>
                             <name>HD: [$1] [taxa] de leitura em Bps</name>
-                            <type>0</type>
+                            <type>7</type>
                             <snmp_community/>
                             <multiplier>0</multiplier>
                             <snmp_oid/>
@@ -2332,7 +2285,7 @@ https://www.zabbix.com/documentation/2.0/manual/appendix/items/supported_by_plat
                         </item_prototype>
                         <item_prototype>
                             <name>HD: [{#NAME}] [temperatura] de ({#MODEL})</name>
-                            <type>0</type>
+                            <type>7</type>
                             <snmp_community/>
                             <multiplier>0</multiplier>
                             <snmp_oid/>
@@ -2376,7 +2329,7 @@ https://www.zabbix.com/documentation/2.0/manual/appendix/items/supported_by_plat
                     </item_prototypes>
                     <trigger_prototypes>
                         <trigger_prototype>
-                            <expression>{200_template_gnu_linux_servidores:up.hddtemp.hd[/dev/{#NAME}].last(0)}&gt;50</expression>
+                            <expression>{200_template_gnu_linux_servidores_ativo:up.hddtemp.hd[/dev/{#NAME}].last(0)}&gt;50</expression>
                             <name>[{HOSTNAME}]: [hd] temperatura de {#NAME} está alta</name>
                             <url/>
                             <status>0</status>
@@ -2412,7 +2365,7 @@ https://www.zabbix.com/documentation/2.0/manual/appendix/items/supported_by_plat
                                     <calc_fnc>2</calc_fnc>
                                     <type>0</type>
                                     <item>
-                                        <host>200_template_gnu_linux_servidores</host>
+                                        <host>200_template_gnu_linux_servidores_ativo</host>
                                         <key>up.diskstats[{#NAME},IoMs]</key>
                                     </item>
                                 </graph_item>
@@ -2424,7 +2377,7 @@ https://www.zabbix.com/documentation/2.0/manual/appendix/items/supported_by_plat
                                     <calc_fnc>2</calc_fnc>
                                     <type>0</type>
                                     <item>
-                                        <host>200_template_gnu_linux_servidores</host>
+                                        <host>200_template_gnu_linux_servidores_ativo</host>
                                         <key>up.diskstats[{#NAME},ReadMs]</key>
                                     </item>
                                 </graph_item>
@@ -2436,7 +2389,7 @@ https://www.zabbix.com/documentation/2.0/manual/appendix/items/supported_by_plat
                                     <calc_fnc>2</calc_fnc>
                                     <type>0</type>
                                     <item>
-                                        <host>200_template_gnu_linux_servidores</host>
+                                        <host>200_template_gnu_linux_servidores_ativo</host>
                                         <key>up.diskstats[{#NAME},WriteMs]</key>
                                     </item>
                                 </graph_item>
@@ -2468,7 +2421,7 @@ https://www.zabbix.com/documentation/2.0/manual/appendix/items/supported_by_plat
                                     <calc_fnc>2</calc_fnc>
                                     <type>0</type>
                                     <item>
-                                        <host>200_template_gnu_linux_servidores</host>
+                                        <host>200_template_gnu_linux_servidores_ativo</host>
                                         <key>up.diskstats[{#NAME},IoProgress]</key>
                                     </item>
                                 </graph_item>
@@ -2480,7 +2433,7 @@ https://www.zabbix.com/documentation/2.0/manual/appendix/items/supported_by_plat
                                     <calc_fnc>2</calc_fnc>
                                     <type>0</type>
                                     <item>
-                                        <host>200_template_gnu_linux_servidores</host>
+                                        <host>200_template_gnu_linux_servidores_ativo</host>
                                         <key>up.diskstats[{#NAME},ReadSectors]</key>
                                     </item>
                                 </graph_item>
@@ -2492,7 +2445,7 @@ https://www.zabbix.com/documentation/2.0/manual/appendix/items/supported_by_plat
                                     <calc_fnc>2</calc_fnc>
                                     <type>0</type>
                                     <item>
-                                        <host>200_template_gnu_linux_servidores</host>
+                                        <host>200_template_gnu_linux_servidores_ativo</host>
                                         <key>up.diskstats[{#NAME},WriteSectors]</key>
                                     </item>
                                 </graph_item>
@@ -2524,7 +2477,7 @@ https://www.zabbix.com/documentation/2.0/manual/appendix/items/supported_by_plat
                                     <calc_fnc>2</calc_fnc>
                                     <type>0</type>
                                     <item>
-                                        <host>200_template_gnu_linux_servidores</host>
+                                        <host>200_template_gnu_linux_servidores_ativo</host>
                                         <key>up.hddtemp.hd[/dev/{#NAME}]</key>
                                     </item>
                                 </graph_item>
@@ -2535,7 +2488,7 @@ https://www.zabbix.com/documentation/2.0/manual/appendix/items/supported_by_plat
                 </discovery_rule>
                 <discovery_rule>
                     <name>Rede: Descoberta de interfaces de rede</name>
-                    <type>0</type>
+                    <type>7</type>
                     <snmp_community/>
                     <snmp_oid/>
                     <key>net.if.discovery</key>
@@ -2568,7 +2521,7 @@ https://www.zabbix.com/documentation/2.2/manual/discovery/low_level_discovery</d
                     <item_prototypes>
                         <item_prototype>
                             <name>Rede: mac address da interface {#IFNAME}</name>
-                            <type>0</type>
+                            <type>7</type>
                             <snmp_community/>
                             <multiplier>0</multiplier>
                             <snmp_oid/>
@@ -2611,7 +2564,7 @@ https://www.zabbix.com/documentation/2.2/manual/discovery/low_level_discovery</d
                         </item_prototype>
                         <item_prototype>
                             <name>Rede: número de colisões na interface {#IFNAME}</name>
-                            <type>0</type>
+                            <type>7</type>
                             <snmp_community/>
                             <multiplier>1</multiplier>
                             <snmp_oid/>
@@ -2654,7 +2607,7 @@ https://www.zabbix.com/documentation/2.2/manual/discovery/low_level_discovery</d
                         </item_prototype>
                         <item_prototype>
                             <name>Rede: tráfego total em $1</name>
-                            <type>0</type>
+                            <type>7</type>
                             <snmp_community/>
                             <multiplier>0</multiplier>
                             <snmp_oid/>
@@ -2697,7 +2650,7 @@ https://www.zabbix.com/documentation/2.2/manual/discovery/low_level_discovery</d
                         </item_prototype>
                         <item_prototype>
                             <name>Rede: [entrada] número de erros na interface {#IFNAME}</name>
-                            <type>0</type>
+                            <type>7</type>
                             <snmp_community/>
                             <multiplier>1</multiplier>
                             <snmp_oid/>
@@ -2740,7 +2693,7 @@ https://www.zabbix.com/documentation/2.2/manual/discovery/low_level_discovery</d
                         </item_prototype>
                         <item_prototype>
                             <name>Rede: [entrada] número de pacotes dropados na interface {#IFNAME}</name>
-                            <type>0</type>
+                            <type>7</type>
                             <snmp_community/>
                             <multiplier>1</multiplier>
                             <snmp_oid/>
@@ -2783,7 +2736,7 @@ https://www.zabbix.com/documentation/2.2/manual/discovery/low_level_discovery</d
                         </item_prototype>
                         <item_prototype>
                             <name>Rede: [entrada] tráfego em $1</name>
-                            <type>0</type>
+                            <type>7</type>
                             <snmp_community/>
                             <multiplier>0</multiplier>
                             <snmp_oid/>
@@ -2826,7 +2779,7 @@ https://www.zabbix.com/documentation/2.2/manual/discovery/low_level_discovery</d
                         </item_prototype>
                         <item_prototype>
                             <name>Rede: [saída] número de erros na interface {#IFNAME}</name>
-                            <type>0</type>
+                            <type>7</type>
                             <snmp_community/>
                             <multiplier>1</multiplier>
                             <snmp_oid/>
@@ -2869,7 +2822,7 @@ https://www.zabbix.com/documentation/2.2/manual/discovery/low_level_discovery</d
                         </item_prototype>
                         <item_prototype>
                             <name>Rede: [saída] número de pacotes dropados na interface {#IFNAME}</name>
-                            <type>0</type>
+                            <type>7</type>
                             <snmp_community/>
                             <multiplier>1</multiplier>
                             <snmp_oid/>
@@ -2912,7 +2865,7 @@ https://www.zabbix.com/documentation/2.2/manual/discovery/low_level_discovery</d
                         </item_prototype>
                         <item_prototype>
                             <name>Rede: [saída] tráfego em $1</name>
-                            <type>0</type>
+                            <type>7</type>
                             <snmp_community/>
                             <multiplier>0</multiplier>
                             <snmp_oid/>
@@ -2956,7 +2909,7 @@ https://www.zabbix.com/documentation/2.2/manual/discovery/low_level_discovery</d
                     </item_prototypes>
                     <trigger_prototypes>
                         <trigger_prototype>
-                            <expression>{200_template_gnu_linux_servidores:net.if.in[{#IFNAME},errors].last(0)}&gt;0</expression>
+                            <expression>{200_template_gnu_linux_servidores_ativo:net.if.in[{#IFNAME},errors].last(0)}&gt;0</expression>
                             <name>[{HOSTNAME}]: [rede] erro de entrada na interface {#IFNAME}</name>
                             <url/>
                             <status>0</status>
@@ -2965,7 +2918,7 @@ https://www.zabbix.com/documentation/2.2/manual/discovery/low_level_discovery</d
                             <type>0</type>
                         </trigger_prototype>
                         <trigger_prototype>
-                            <expression>{200_template_gnu_linux_servidores:net.if.out[{#IFNAME},errors].last(0)}&gt;0</expression>
+                            <expression>{200_template_gnu_linux_servidores_ativo:net.if.out[{#IFNAME},errors].last(0)}&gt;0</expression>
                             <name>[{HOSTNAME}]: [rede] erro de saída na interface {#IFNAME}</name>
                             <url/>
                             <status>0</status>
@@ -2974,7 +2927,7 @@ https://www.zabbix.com/documentation/2.2/manual/discovery/low_level_discovery</d
                             <type>0</type>
                         </trigger_prototype>
                         <trigger_prototype>
-                            <expression>{200_template_gnu_linux_servidores:system.hw.macaddr[&quot;{#IFNAME}$&quot;,full].diff(0)}&gt;0</expression>
+                            <expression>{200_template_gnu_linux_servidores_ativo:system.hw.macaddr[&quot;{#IFNAME}$&quot;,full].diff(0)}&gt;0</expression>
                             <name>[{HOSTNAME}]: [rede] o mac address da interface {#IFNAME} foi alterado</name>
                             <url/>
                             <status>0</status>
@@ -3010,7 +2963,7 @@ https://www.zabbix.com/documentation/2.2/manual/discovery/low_level_discovery</d
                                     <calc_fnc>2</calc_fnc>
                                     <type>0</type>
                                     <item>
-                                        <host>200_template_gnu_linux_servidores</host>
+                                        <host>200_template_gnu_linux_servidores_ativo</host>
                                         <key>net.if.in[{#IFNAME},errors]</key>
                                     </item>
                                 </graph_item>
@@ -3022,7 +2975,7 @@ https://www.zabbix.com/documentation/2.2/manual/discovery/low_level_discovery</d
                                     <calc_fnc>2</calc_fnc>
                                     <type>0</type>
                                     <item>
-                                        <host>200_template_gnu_linux_servidores</host>
+                                        <host>200_template_gnu_linux_servidores_ativo</host>
                                         <key>net.if.out[{#IFNAME},errors]</key>
                                     </item>
                                 </graph_item>
@@ -3034,7 +2987,7 @@ https://www.zabbix.com/documentation/2.2/manual/discovery/low_level_discovery</d
                                     <calc_fnc>2</calc_fnc>
                                     <type>0</type>
                                     <item>
-                                        <host>200_template_gnu_linux_servidores</host>
+                                        <host>200_template_gnu_linux_servidores_ativo</host>
                                         <key>net.if.in[{#IFNAME},dropped]</key>
                                     </item>
                                 </graph_item>
@@ -3046,7 +2999,7 @@ https://www.zabbix.com/documentation/2.2/manual/discovery/low_level_discovery</d
                                     <calc_fnc>2</calc_fnc>
                                     <type>0</type>
                                     <item>
-                                        <host>200_template_gnu_linux_servidores</host>
+                                        <host>200_template_gnu_linux_servidores_ativo</host>
                                         <key>net.if.out[{#IFNAME},dropped]</key>
                                     </item>
                                 </graph_item>
@@ -3078,7 +3031,7 @@ https://www.zabbix.com/documentation/2.2/manual/discovery/low_level_discovery</d
                                     <calc_fnc>2</calc_fnc>
                                     <type>0</type>
                                     <item>
-                                        <host>200_template_gnu_linux_servidores</host>
+                                        <host>200_template_gnu_linux_servidores_ativo</host>
                                         <key>net.if.in[{#IFNAME},bytes]</key>
                                     </item>
                                 </graph_item>
@@ -3090,7 +3043,7 @@ https://www.zabbix.com/documentation/2.2/manual/discovery/low_level_discovery</d
                                     <calc_fnc>2</calc_fnc>
                                     <type>0</type>
                                     <item>
-                                        <host>200_template_gnu_linux_servidores</host>
+                                        <host>200_template_gnu_linux_servidores_ativo</host>
                                         <key>net.if.out[{#IFNAME},bytes]</key>
                                     </item>
                                 </graph_item>
@@ -3101,7 +3054,7 @@ https://www.zabbix.com/documentation/2.2/manual/discovery/low_level_discovery</d
                 </discovery_rule>
                 <discovery_rule>
                     <name>Sistema de arquivos: Descoberta de sistema de arquivos montados</name>
-                    <type>0</type>
+                    <type>7</type>
                     <snmp_community/>
                     <snmp_oid/>
                     <key>vfs.fs.discovery</key>
@@ -3137,7 +3090,7 @@ https://www.zabbix.com/documentation/2.2/manual/discovery/low_level_discovery</d
                     <item_prototypes>
                         <item_prototype>
                             <name>Sistema de arquivos: % de espaço livre em $1</name>
-                            <type>0</type>
+                            <type>7</type>
                             <snmp_community/>
                             <multiplier>0</multiplier>
                             <snmp_oid/>
@@ -3180,7 +3133,7 @@ https://www.zabbix.com/documentation/2.2/manual/discovery/low_level_discovery</d
                         </item_prototype>
                         <item_prototype>
                             <name>Sistema de arquivos: espaço total em $1</name>
-                            <type>0</type>
+                            <type>7</type>
                             <snmp_community/>
                             <multiplier>0</multiplier>
                             <snmp_oid/>
@@ -3223,7 +3176,7 @@ https://www.zabbix.com/documentation/2.2/manual/discovery/low_level_discovery</d
                         </item_prototype>
                         <item_prototype>
                             <name>Sistema de arquivos: espaço utilizado em $1</name>
-                            <type>0</type>
+                            <type>7</type>
                             <snmp_community/>
                             <multiplier>0</multiplier>
                             <snmp_oid/>
@@ -3266,7 +3219,7 @@ https://www.zabbix.com/documentation/2.2/manual/discovery/low_level_discovery</d
                         </item_prototype>
                         <item_prototype>
                             <name>Sistema de arquivos: número de inodes livres em $1</name>
-                            <type>0</type>
+                            <type>7</type>
                             <snmp_community/>
                             <multiplier>0</multiplier>
                             <snmp_oid/>
@@ -3287,7 +3240,7 @@ https://www.zabbix.com/documentation/2.2/manual/discovery/low_level_discovery</d
                             <snmpv3_privprotocol>0</snmpv3_privprotocol>
                             <snmpv3_privpassphrase/>
                             <formula>1</formula>
-                            <delay_flex>50/1-7,00:00-24:00</delay_flex>
+                            <delay_flex/>
                             <params/>
                             <ipmi_sensor/>
                             <data_type>0</data_type>
@@ -3309,7 +3262,7 @@ https://www.zabbix.com/documentation/2.2/manual/discovery/low_level_discovery</d
                         </item_prototype>
                         <item_prototype>
                             <name>Sistema de arquivos: número total de inodes em $1</name>
-                            <type>0</type>
+                            <type>7</type>
                             <snmp_community/>
                             <multiplier>0</multiplier>
                             <snmp_oid/>
@@ -3330,7 +3283,7 @@ https://www.zabbix.com/documentation/2.2/manual/discovery/low_level_discovery</d
                             <snmpv3_privprotocol>0</snmpv3_privprotocol>
                             <snmpv3_privpassphrase/>
                             <formula>1</formula>
-                            <delay_flex>50/1-7,00:00-24:00</delay_flex>
+                            <delay_flex/>
                             <params/>
                             <ipmi_sensor/>
                             <data_type>0</data_type>
@@ -3352,7 +3305,7 @@ https://www.zabbix.com/documentation/2.2/manual/discovery/low_level_discovery</d
                         </item_prototype>
                         <item_prototype>
                             <name>Sistema de arquivos: Porcentagem de inodes livres em $1</name>
-                            <type>0</type>
+                            <type>7</type>
                             <snmp_community/>
                             <multiplier>0</multiplier>
                             <snmp_oid/>
@@ -3396,7 +3349,7 @@ https://www.zabbix.com/documentation/2.2/manual/discovery/low_level_discovery</d
                     </item_prototypes>
                     <trigger_prototypes>
                         <trigger_prototype>
-                            <expression>{200_template_gnu_linux_servidores:vfs.fs.inode[{#FSNAME},pfree].last(0)}&lt;20</expression>
+                            <expression>{200_template_gnu_linux_servidores_ativo:vfs.fs.inode[{#FSNAME},pfree].last(0)}&lt;20</expression>
                             <name>[{HOSTNAME}]: [sistema de arquivos] baixa porcentagem ({ITEM.LASTVALUE}) de inodes livres em {#FSNAME}</name>
                             <url/>
                             <status>0</status>
@@ -3405,7 +3358,7 @@ https://www.zabbix.com/documentation/2.2/manual/discovery/low_level_discovery</d
                             <type>0</type>
                         </trigger_prototype>
                         <trigger_prototype>
-                            <expression>{200_template_gnu_linux_servidores:vfs.fs.size[{#FSNAME},pfree].last(0)}&lt;5</expression>
+                            <expression>{200_template_gnu_linux_servidores_ativo:vfs.fs.size[{#FSNAME},pfree].last(0)}&lt;5</expression>
                             <name>[{HOSTNAME}]: [sistema de arquivos] nivel crítico: {ITEM.LASTVALUE} espaço livre em {#FSNAME}</name>
                             <url/>
                             <status>0</status>
@@ -3414,7 +3367,7 @@ https://www.zabbix.com/documentation/2.2/manual/discovery/low_level_discovery</d
                             <type>0</type>
                         </trigger_prototype>
                         <trigger_prototype>
-                            <expression>{200_template_gnu_linux_servidores:vfs.fs.size[{#FSNAME},pfree].last(0)}&lt;20</expression>
+                            <expression>{200_template_gnu_linux_servidores_ativo:vfs.fs.size[{#FSNAME},pfree].last(0)}&lt;20</expression>
                             <name>[{HOSTNAME}]: [sistema de arquivos] {ITEM.LASTVALUE} de espaço livre em {#FSNAME}</name>
                             <url/>
                             <status>0</status>
@@ -3450,7 +3403,7 @@ https://www.zabbix.com/documentation/2.2/manual/discovery/low_level_discovery</d
                                     <calc_fnc>2</calc_fnc>
                                     <type>0</type>
                                     <item>
-                                        <host>200_template_gnu_linux_servidores</host>
+                                        <host>200_template_gnu_linux_servidores_ativo</host>
                                         <key>vfs.fs.size[{#FSNAME},total]</key>
                                     </item>
                                 </graph_item>
@@ -3462,7 +3415,7 @@ https://www.zabbix.com/documentation/2.2/manual/discovery/low_level_discovery</d
                                     <calc_fnc>2</calc_fnc>
                                     <type>0</type>
                                     <item>
-                                        <host>200_template_gnu_linux_servidores</host>
+                                        <host>200_template_gnu_linux_servidores_ativo</host>
                                         <key>vfs.fs.size[{#FSNAME},used]</key>
                                     </item>
                                 </graph_item>
@@ -3494,7 +3447,7 @@ https://www.zabbix.com/documentation/2.2/manual/discovery/low_level_discovery</d
                                     <calc_fnc>2</calc_fnc>
                                     <type>0</type>
                                     <item>
-                                        <host>200_template_gnu_linux_servidores</host>
+                                        <host>200_template_gnu_linux_servidores_ativo</host>
                                         <key>vfs.fs.inode[{#FSNAME},total]</key>
                                     </item>
                                 </graph_item>
@@ -3506,7 +3459,7 @@ https://www.zabbix.com/documentation/2.2/manual/discovery/low_level_discovery</d
                                     <calc_fnc>2</calc_fnc>
                                     <type>0</type>
                                     <item>
-                                        <host>200_template_gnu_linux_servidores</host>
+                                        <host>200_template_gnu_linux_servidores_ativo</host>
                                         <key>vfs.fs.inode[{#FSNAME},free]</key>
                                     </item>
                                 </graph_item>
@@ -3530,10 +3483,6 @@ https://www.zabbix.com/documentation/2.2/manual/discovery/low_level_discovery</d
                     <value>5</value>
                 </macro>
                 <macro>
-                    <macro>{$GNU_LINUX_PORCENTAGEM_MAXIMA_CARGA}</macro>
-                    <value>5</value>
-                </macro>
-                <macro>
                     <macro>{$GNU_LINUX_PORCENTAGEM_MINIMA_RAM}</macro>
                     <value>20</value>
                 </macro>
@@ -3544,13 +3493,13 @@ https://www.zabbix.com/documentation/2.2/manual/discovery/low_level_discovery</d
             </macros>
             <templates>
                 <template>
-                    <name>003_template_sem_agente_simples_disponibilidade_essencial</name>
+                    <name>000_template_sem_agente_simples</name>
                 </template>
                 <template>
-                    <name>800_template_agente_zabbix_disponibilidade_essencial</name>
+                    <name>800_template_agente_zabbix_disponibilidade_essencial_ativo</name>
                 </template>
                 <template>
-                    <name>802_template_agente_zabbix_gnu_linux</name>
+                    <name>802_template_agente_zabbix_gnu_linux_ativo</name>
                 </template>
             </templates>
             <screens>
@@ -3576,7 +3525,7 @@ https://www.zabbix.com/documentation/2.2/manual/discovery/low_level_discovery</d
                             <sort_triggers>0</sort_triggers>
                             <resource>
                                 <name>Processador: carga</name>
-                                <host>200_template_gnu_linux_servidores</host>
+                                <host>200_template_gnu_linux_servidores_ativo</host>
                             </resource>
                             <application/>
                         </screen_item>
@@ -3597,7 +3546,7 @@ https://www.zabbix.com/documentation/2.2/manual/discovery/low_level_discovery</d
                             <sort_triggers>0</sort_triggers>
                             <resource>
                                 <name>Processador: utilização</name>
-                                <host>200_template_gnu_linux_servidores</host>
+                                <host>200_template_gnu_linux_servidores_ativo</host>
                             </resource>
                             <application/>
                         </screen_item>
@@ -3618,7 +3567,7 @@ https://www.zabbix.com/documentation/2.2/manual/discovery/low_level_discovery</d
                             <sort_triggers>0</sort_triggers>
                             <resource>
                                 <name>Memória: RAM</name>
-                                <host>200_template_gnu_linux_servidores</host>
+                                <host>200_template_gnu_linux_servidores_ativo</host>
                             </resource>
                             <application/>
                         </screen_item>
@@ -3639,7 +3588,7 @@ https://www.zabbix.com/documentation/2.2/manual/discovery/low_level_discovery</d
                             <sort_triggers>0</sort_triggers>
                             <resource>
                                 <name>Memória: SWAP</name>
-                                <host>200_template_gnu_linux_servidores</host>
+                                <host>200_template_gnu_linux_servidores_ativo</host>
                             </resource>
                             <application/>
                         </screen_item>
@@ -3650,37 +3599,37 @@ https://www.zabbix.com/documentation/2.2/manual/discovery/low_level_discovery</d
     </templates>
     <triggers>
         <trigger>
-            <expression>{200_template_gnu_linux_servidores:vm.memory.size[pavailable].min(300)}&lt;{$GNU_LINUX_PORCENTAGEM_MINIMA_RAM}</expression>
+            <expression>{200_template_gnu_linux_servidores_ativo:vm.memory.size[pavailable].min(300)}&lt;{$GNU_LINUX_PORCENTAGEM_MINIMA_RAM}</expression>
             <name>[{HOSTNAME}]: [memória] [ram] pouca memória disponível ({ITEM.LASTVALUE})</name>
             <url/>
             <status>0</status>
-            <priority>3</priority>
+            <priority>2</priority>
             <description/>
             <type>0</type>
             <dependencies/>
         </trigger>
         <trigger>
-            <expression>{200_template_gnu_linux_servidores:system.swap.size[all,pfree].min(300)}&lt;{$GNU_LINUX_PORCENTAGEM_MINIMA_SWAP}&amp;{200_template_gnu_linux_servidores:system.swap.size[all,used].last(0)}&gt;0</expression>
+            <expression>{200_template_gnu_linux_servidores_ativo:system.swap.size[all,pfree].min(300)}&lt;{$GNU_LINUX_PORCENTAGEM_MINIMA_SWAP}</expression>
             <name>[{HOSTNAME}]: [memória] [swap] pouca memória disponível ({ITEM.LASTVALUE})</name>
             <url/>
             <status>0</status>
-            <priority>3</priority>
+            <priority>2</priority>
             <description/>
             <type>0</type>
             <dependencies/>
         </trigger>
         <trigger>
-            <expression>{200_template_gnu_linux_servidores:system.cpu.load[all,avg1].last(0)}&gt;{$GNU_LINUX_PORCENTAGEM_MAXIMA_CARGA}</expression>
+            <expression>{200_template_gnu_linux_servidores_ativo:system.cpu.load[all,avg1].last(0)}&gt;5</expression>
             <name>[{HOSTNAME}]: [processador] carga esta alta</name>
             <url/>
             <status>0</status>
-            <priority>3</priority>
+            <priority>2</priority>
             <description/>
             <type>0</type>
             <dependencies/>
         </trigger>
         <trigger>
-            <expression>{200_template_gnu_linux_servidores:vfs.file.cksum[/etc/passwd].diff(0)}&gt;0</expression>
+            <expression>{200_template_gnu_linux_servidores_ativo:vfs.file.cksum[/etc/passwd].diff(0)}&gt;0</expression>
             <name>[{HOSTNAME}]: [sistema] /etc/passwd foi modificado</name>
             <url/>
             <status>0</status>
@@ -3690,7 +3639,7 @@ https://www.zabbix.com/documentation/2.2/manual/discovery/low_level_discovery</d
             <dependencies/>
         </trigger>
         <trigger>
-            <expression>{200_template_gnu_linux_servidores:system.uptime.last(0)}&lt;2000</expression>
+            <expression>{200_template_gnu_linux_servidores_ativo:system.uptime.last(0)}&lt;2000</expression>
             <name>[{HOSTNAME}]: [sistema] acabou de ser reiniciado</name>
             <url/>
             <status>0</status>
@@ -3700,7 +3649,7 @@ https://www.zabbix.com/documentation/2.2/manual/discovery/low_level_discovery</d
             <dependencies/>
         </trigger>
         <trigger>
-            <expression>{200_template_gnu_linux_servidores:kernel.maxproc.last(0)}&lt;300</expression>
+            <expression>{200_template_gnu_linux_servidores_ativo:kernel.maxproc.last(0)}&lt;300</expression>
             <name>[{HOSTNAME}]: [sistema] a configuração de número máximo de processos é muito baixa ({ITEM.LASTVALUE})</name>
             <url/>
             <status>0</status>
@@ -3710,7 +3659,7 @@ https://www.zabbix.com/documentation/2.2/manual/discovery/low_level_discovery</d
             <dependencies/>
         </trigger>
         <trigger>
-            <expression>{200_template_gnu_linux_servidores:kernel.maxfiles.last(0)}&lt;1024</expression>
+            <expression>{200_template_gnu_linux_servidores_ativo:kernel.maxfiles.last(0)}&lt;1024</expression>
             <name>[{HOSTNAME}]: [sistema] a configuração do número máximo de arquivos abertos é muito baixa ({ITEM.LASTVALUE})</name>
             <url/>
             <status>0</status>
@@ -3720,7 +3669,7 @@ https://www.zabbix.com/documentation/2.2/manual/discovery/low_level_discovery</d
             <dependencies/>
         </trigger>
         <trigger>
-            <expression>{200_template_gnu_linux_servidores:system.localtime.fuzzytime(10)}=0</expression>
+            <expression>{200_template_gnu_linux_servidores_ativo:system.localtime.fuzzytime(10)}=0</expression>
             <name>[{HOSTNAME}]: [sistema] horário atrasado em relação ao servidor zabbix</name>
             <url/>
             <status>0</status>
@@ -3730,17 +3679,17 @@ https://www.zabbix.com/documentation/2.2/manual/discovery/low_level_discovery</d
             <dependencies/>
         </trigger>
         <trigger>
-            <expression>{200_template_gnu_linux_servidores:proc.num[,,zomb].min(600)}&gt;{$GNU_LINUX_NUMERO_MAXIMO_PROCESSOS_ZUMBI}</expression>
+            <expression>{200_template_gnu_linux_servidores_ativo:proc.num[,,zomb].min(600)}&gt;{$GNU_LINUX_NUMERO_MAXIMO_PROCESSOS_ZUMBI}</expression>
             <name>[{HOSTNAME}]: [sistema] há {ITEM.LASTVALUE} processos zumbi</name>
             <url/>
             <status>0</status>
-            <priority>1</priority>
+            <priority>2</priority>
             <description/>
             <type>0</type>
             <dependencies/>
         </trigger>
         <trigger>
-            <expression>{200_template_gnu_linux_servidores:system.uname.diff(0)}&gt;0</expression>
+            <expression>{200_template_gnu_linux_servidores_ativo:system.uname.diff(0)}&gt;0</expression>
             <name>[{HOSTNAME}]: [sistema] informacoes do host mudaram</name>
             <url/>
             <status>0</status>
@@ -3750,7 +3699,7 @@ https://www.zabbix.com/documentation/2.2/manual/discovery/low_level_discovery</d
             <dependencies/>
         </trigger>
         <trigger>
-            <expression>{200_template_gnu_linux_servidores:proc.num[].min(600)}&gt;{$GNU_LINUX_NUMERO_MAXIMO_PROCESSOS}</expression>
+            <expression>{200_template_gnu_linux_servidores_ativo:proc.num[].min(600)}&gt;{$GNU_LINUX_NUMERO_MAXIMO_PROCESSOS}</expression>
             <name>[{HOSTNAME}]: [sistema] muitos processos rodando ({ITEM.LASTVALUE})</name>
             <url/>
             <status>0</status>
@@ -3760,7 +3709,7 @@ https://www.zabbix.com/documentation/2.2/manual/discovery/low_level_discovery</d
             <dependencies/>
         </trigger>
         <trigger>
-            <expression>{200_template_gnu_linux_servidores:system.users.num.last(0)}&gt;{$GNU_LINUX_NUMERO_MAXIMO_USUARIOS}</expression>
+            <expression>{200_template_gnu_linux_servidores_ativo:system.users.num.last(0)}&gt;{$GNU_LINUX_NUMERO_MAXIMO_USUARIOS}</expression>
             <name>[{HOSTNAME}]: [sistema] muitos usuarios conectados ({ITEM.LASTVALUE})</name>
             <url/>
             <status>0</status>
@@ -3770,7 +3719,7 @@ https://www.zabbix.com/documentation/2.2/manual/discovery/low_level_discovery</d
             <dependencies/>
         </trigger>
         <trigger>
-            <expression>{200_template_gnu_linux_servidores:system.hostname.diff(0)}&gt;0</expression>
+            <expression>{200_template_gnu_linux_servidores_ativo:system.hostname.diff(0)}&gt;0</expression>
             <name>[{HOSTNAME}]: [sistema] nome do host mudou para {ITEM.LASTVALUE}</name>
             <url/>
             <status>0</status>
@@ -3807,7 +3756,7 @@ https://www.zabbix.com/documentation/2.2/manual/discovery/low_level_discovery</d
                     <calc_fnc>2</calc_fnc>
                     <type>0</type>
                     <item>
-                        <host>200_template_gnu_linux_servidores</host>
+                        <host>200_template_gnu_linux_servidores_ativo</host>
                         <key>vm.memory.size[total]</key>
                     </item>
                 </graph_item>
@@ -3819,7 +3768,7 @@ https://www.zabbix.com/documentation/2.2/manual/discovery/low_level_discovery</d
                     <calc_fnc>2</calc_fnc>
                     <type>0</type>
                     <item>
-                        <host>200_template_gnu_linux_servidores</host>
+                        <host>200_template_gnu_linux_servidores_ativo</host>
                         <key>vm.memory.size[available]</key>
                     </item>
                 </graph_item>
@@ -3831,7 +3780,7 @@ https://www.zabbix.com/documentation/2.2/manual/discovery/low_level_discovery</d
                     <calc_fnc>2</calc_fnc>
                     <type>0</type>
                     <item>
-                        <host>200_template_gnu_linux_servidores</host>
+                        <host>200_template_gnu_linux_servidores_ativo</host>
                         <key>vm.memory.size[buffers]</key>
                     </item>
                 </graph_item>
@@ -3843,7 +3792,7 @@ https://www.zabbix.com/documentation/2.2/manual/discovery/low_level_discovery</d
                     <calc_fnc>2</calc_fnc>
                     <type>0</type>
                     <item>
-                        <host>200_template_gnu_linux_servidores</host>
+                        <host>200_template_gnu_linux_servidores_ativo</host>
                         <key>vm.memory.size[cached]</key>
                     </item>
                 </graph_item>
@@ -3855,7 +3804,7 @@ https://www.zabbix.com/documentation/2.2/manual/discovery/low_level_discovery</d
                     <calc_fnc>2</calc_fnc>
                     <type>0</type>
                     <item>
-                        <host>200_template_gnu_linux_servidores</host>
+                        <host>200_template_gnu_linux_servidores_ativo</host>
                         <key>vm.memory.size[inactive]</key>
                     </item>
                 </graph_item>
@@ -3867,7 +3816,7 @@ https://www.zabbix.com/documentation/2.2/manual/discovery/low_level_discovery</d
                     <calc_fnc>2</calc_fnc>
                     <type>0</type>
                     <item>
-                        <host>200_template_gnu_linux_servidores</host>
+                        <host>200_template_gnu_linux_servidores_ativo</host>
                         <key>vm.memory.size[free]</key>
                     </item>
                 </graph_item>
@@ -3879,8 +3828,8 @@ https://www.zabbix.com/documentation/2.2/manual/discovery/low_level_discovery</d
                     <calc_fnc>2</calc_fnc>
                     <type>0</type>
                     <item>
-                        <host>200_template_gnu_linux_servidores</host>
-                        <key>calc.memory.used</key>
+                        <host>200_template_gnu_linux_servidores_ativo</host>
+                        <key>vm.memory.size[used]</key>
                     </item>
                 </graph_item>
                 <graph_item>
@@ -3891,7 +3840,7 @@ https://www.zabbix.com/documentation/2.2/manual/discovery/low_level_discovery</d
                     <calc_fnc>2</calc_fnc>
                     <type>0</type>
                     <item>
-                        <host>200_template_gnu_linux_servidores</host>
+                        <host>200_template_gnu_linux_servidores_ativo</host>
                         <key>up.vm.memory.inuse</key>
                     </item>
                 </graph_item>
@@ -3923,8 +3872,8 @@ https://www.zabbix.com/documentation/2.2/manual/discovery/low_level_discovery</d
                     <calc_fnc>2</calc_fnc>
                     <type>0</type>
                     <item>
-                        <host>200_template_gnu_linux_servidores</host>
-                        <key>calc.swap.total</key>
+                        <host>200_template_gnu_linux_servidores_ativo</host>
+                        <key>system.swap.size[all,total]</key>
                     </item>
                 </graph_item>
                 <graph_item>
@@ -3935,7 +3884,7 @@ https://www.zabbix.com/documentation/2.2/manual/discovery/low_level_discovery</d
                     <calc_fnc>2</calc_fnc>
                     <type>0</type>
                     <item>
-                        <host>200_template_gnu_linux_servidores</host>
+                        <host>200_template_gnu_linux_servidores_ativo</host>
                         <key>system.swap.size[all,free]</key>
                     </item>
                 </graph_item>
@@ -3947,7 +3896,7 @@ https://www.zabbix.com/documentation/2.2/manual/discovery/low_level_discovery</d
                     <calc_fnc>2</calc_fnc>
                     <type>0</type>
                     <item>
-                        <host>200_template_gnu_linux_servidores</host>
+                        <host>200_template_gnu_linux_servidores_ativo</host>
                         <key>system.swap.size[all,used]</key>
                     </item>
                 </graph_item>
@@ -3979,7 +3928,7 @@ https://www.zabbix.com/documentation/2.2/manual/discovery/low_level_discovery</d
                     <calc_fnc>2</calc_fnc>
                     <type>0</type>
                     <item>
-                        <host>200_template_gnu_linux_servidores</host>
+                        <host>200_template_gnu_linux_servidores_ativo</host>
                         <key>system.cpu.load[all,avg1]</key>
                     </item>
                 </graph_item>
@@ -3991,7 +3940,7 @@ https://www.zabbix.com/documentation/2.2/manual/discovery/low_level_discovery</d
                     <calc_fnc>2</calc_fnc>
                     <type>0</type>
                     <item>
-                        <host>200_template_gnu_linux_servidores</host>
+                        <host>200_template_gnu_linux_servidores_ativo</host>
                         <key>system.cpu.load[all,avg15]</key>
                     </item>
                 </graph_item>
@@ -4003,7 +3952,7 @@ https://www.zabbix.com/documentation/2.2/manual/discovery/low_level_discovery</d
                     <calc_fnc>2</calc_fnc>
                     <type>0</type>
                     <item>
-                        <host>200_template_gnu_linux_servidores</host>
+                        <host>200_template_gnu_linux_servidores_ativo</host>
                         <key>system.cpu.load[all,avg5]</key>
                     </item>
                 </graph_item>
@@ -4035,7 +3984,7 @@ https://www.zabbix.com/documentation/2.2/manual/discovery/low_level_discovery</d
                     <calc_fnc>2</calc_fnc>
                     <type>0</type>
                     <item>
-                        <host>200_template_gnu_linux_servidores</host>
+                        <host>200_template_gnu_linux_servidores_ativo</host>
                         <key>system.cpu.util[all,idle,avg1]</key>
                     </item>
                 </graph_item>
@@ -4047,7 +3996,7 @@ https://www.zabbix.com/documentation/2.2/manual/discovery/low_level_discovery</d
                     <calc_fnc>2</calc_fnc>
                     <type>0</type>
                     <item>
-                        <host>200_template_gnu_linux_servidores</host>
+                        <host>200_template_gnu_linux_servidores_ativo</host>
                         <key>system.cpu.util[all,nice,avg1]</key>
                     </item>
                 </graph_item>
@@ -4059,7 +4008,7 @@ https://www.zabbix.com/documentation/2.2/manual/discovery/low_level_discovery</d
                     <calc_fnc>2</calc_fnc>
                     <type>0</type>
                     <item>
-                        <host>200_template_gnu_linux_servidores</host>
+                        <host>200_template_gnu_linux_servidores_ativo</host>
                         <key>system.cpu.util[all,iowait,avg1]</key>
                     </item>
                 </graph_item>
@@ -4071,7 +4020,7 @@ https://www.zabbix.com/documentation/2.2/manual/discovery/low_level_discovery</d
                     <calc_fnc>2</calc_fnc>
                     <type>0</type>
                     <item>
-                        <host>200_template_gnu_linux_servidores</host>
+                        <host>200_template_gnu_linux_servidores_ativo</host>
                         <key>system.cpu.util[all,interrupt,avg1]</key>
                     </item>
                 </graph_item>
@@ -4083,7 +4032,7 @@ https://www.zabbix.com/documentation/2.2/manual/discovery/low_level_discovery</d
                     <calc_fnc>2</calc_fnc>
                     <type>0</type>
                     <item>
-                        <host>200_template_gnu_linux_servidores</host>
+                        <host>200_template_gnu_linux_servidores_ativo</host>
                         <key>system.cpu.util[all,softirq,avg1]</key>
                     </item>
                 </graph_item>
@@ -4095,7 +4044,7 @@ https://www.zabbix.com/documentation/2.2/manual/discovery/low_level_discovery</d
                     <calc_fnc>2</calc_fnc>
                     <type>0</type>
                     <item>
-                        <host>200_template_gnu_linux_servidores</host>
+                        <host>200_template_gnu_linux_servidores_ativo</host>
                         <key>system.cpu.util[all,steal,avg1]</key>
                     </item>
                 </graph_item>
@@ -4107,7 +4056,7 @@ https://www.zabbix.com/documentation/2.2/manual/discovery/low_level_discovery</d
                     <calc_fnc>2</calc_fnc>
                     <type>0</type>
                     <item>
-                        <host>200_template_gnu_linux_servidores</host>
+                        <host>200_template_gnu_linux_servidores_ativo</host>
                         <key>system.cpu.util[all,user,avg1]</key>
                     </item>
                 </graph_item>
@@ -4119,7 +4068,7 @@ https://www.zabbix.com/documentation/2.2/manual/discovery/low_level_discovery</d
                     <calc_fnc>2</calc_fnc>
                     <type>0</type>
                     <item>
-                        <host>200_template_gnu_linux_servidores</host>
+                        <host>200_template_gnu_linux_servidores_ativo</host>
                         <key>system.cpu.util[all,system,avg1]</key>
                     </item>
                 </graph_item>
@@ -4151,7 +4100,7 @@ https://www.zabbix.com/documentation/2.2/manual/discovery/low_level_discovery</d
                     <calc_fnc>2</calc_fnc>
                     <type>0</type>
                     <item>
-                        <host>200_template_gnu_linux_servidores</host>
+                        <host>200_template_gnu_linux_servidores_ativo</host>
                         <key>proc.num[]</key>
                     </item>
                 </graph_item>
@@ -4163,7 +4112,7 @@ https://www.zabbix.com/documentation/2.2/manual/discovery/low_level_discovery</d
                     <calc_fnc>2</calc_fnc>
                     <type>0</type>
                     <item>
-                        <host>200_template_gnu_linux_servidores</host>
+                        <host>200_template_gnu_linux_servidores_ativo</host>
                         <key>proc.num[,,run]</key>
                     </item>
                 </graph_item>
@@ -4175,7 +4124,7 @@ https://www.zabbix.com/documentation/2.2/manual/discovery/low_level_discovery</d
                     <calc_fnc>2</calc_fnc>
                     <type>0</type>
                     <item>
-                        <host>200_template_gnu_linux_servidores</host>
+                        <host>200_template_gnu_linux_servidores_ativo</host>
                         <key>proc.num[,,sleep]</key>
                     </item>
                 </graph_item>
@@ -4187,7 +4136,7 @@ https://www.zabbix.com/documentation/2.2/manual/discovery/low_level_discovery</d
                     <calc_fnc>2</calc_fnc>
                     <type>0</type>
                     <item>
-                        <host>200_template_gnu_linux_servidores</host>
+                        <host>200_template_gnu_linux_servidores_ativo</host>
                         <key>proc.num[,,zomb]</key>
                     </item>
                 </graph_item>
