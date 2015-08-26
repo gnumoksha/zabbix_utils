@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zabbix_export>
     <version>2.0</version>
-    <date>2015-05-12T02:26:37Z</date>
+    <date>2015-08-26T22:29:24Z</date>
     <groups>
         <group>
             <name>800 - zabbix</name>
@@ -35,7 +35,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>agent.ping</key>
-                    <delay>30</delay>
+                    <delay>60</delay>
                     <history>7</history>
                     <trends>365</trends>
                     <status>0</status>
