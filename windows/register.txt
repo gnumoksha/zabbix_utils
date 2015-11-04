@@ -1,0 +1,5 @@
+zabbix_agentd.exe -i -m -c zabbix_agentd.conf
+
+#installing a “Zabbix Agent [Hostname]” service for Windows using the configuration file zabbix_agentd.conf located in the same folder as agent executable and make the service name unique by extending it by Hostname value from the config file
+
+https://www.zabbix.com/documentation/2.0/manual/concepts/agent

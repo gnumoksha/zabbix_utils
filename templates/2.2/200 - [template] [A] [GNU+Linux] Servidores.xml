@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zabbix_export>
     <version>2.0</version>
-    <date>2015-08-26T22:31:21Z</date>
+    <date>2015-09-09T18:37:45Z</date>
     <groups>
         <group>
             <name>200 - servidores GNU+Linux</name>
@@ -1790,7 +1790,7 @@ https://www.zabbix.com/documentation/2.0/manual/appendix/items/supported_by_plat
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>kernel.maxproc</key>
-                    <delay>1800</delay>
+                    <delay>3600</delay>
                     <history>7</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -3690,7 +3690,7 @@ https://www.zabbix.com/documentation/2.2/manual/discovery/low_level_discovery</d
             <dependencies/>
         </trigger>
         <trigger>
-            <expression>{200_template_gnu_linux_servidores_ativo:system.uptime.last(0)}&lt;2000</expression>
+            <expression>{200_template_gnu_linux_servidores_ativo:system.uptime.change(0)}&lt;0</expression>
             <name>[{HOSTNAME}]: [sistema] acabou de ser reiniciado</name>
             <url/>
             <status>0</status>
